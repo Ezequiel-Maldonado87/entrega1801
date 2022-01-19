@@ -1,0 +1,16 @@
+.footer{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "subtit rex";
+    justify-content: center;
+    /*justify-content: flex-start;*/
+
+    .subtit{
+        grid-area: subtit;
+        text-align: center;
+        margin-top: 2%;
+    }
+}

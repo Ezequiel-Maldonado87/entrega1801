@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+/* mixin agregado*/
+.containerb {
+  height: 930px;
+  display: block;
+  background-color: black;
+  display: flex; }
+  .containerb .containerc, .containerb .newpadre {
+    width: 100%;
+    max-width: 1200px;
+    height: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    /*mixin agregado*/ }
+    .containerb .containerc .card, .containerb .newpadre .card {
+      width: 330px;
+      height: 400px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.25s; }
+      .containerb .containerc .card :hover, .containerb .newpadre .card :hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+      .containerb .containerc .card img, .containerb .newpadre .card img {
+        width: 330px;
+        height: 220px; }
+      .containerb .containerc .card h3, .containerb .newpadre .card h3 {
+        font-weight: 600; }
+      .containerb .containerc .card p, .containerb .newpadre .card p {
+        padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300; }
+      .containerb .containerc .card a, .containerb .newpadre .card a {
+        font-weight: 500;
+        text-decoration: none;
+        color: brown; }
+
+.footer {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "subtit rex";
+  justify-content: center;
+  /*justify-content: flex-start;*/ }
+  .footer .subtit {
+    grid-area: subtit;
+    text-align: center;
+    margin-top: 2%; }
+
+main {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px; }
+  main .carru {
+    background-color: #161515; }
+    main .carru .carousel {
+      display: inline-block;
+      justify-content: center;
+      height: 100%; }
+  main .prodest {
+    color: yellow;
+    text-align: center;
+    font-family: 'Monoton', cursive; }
+  main .prodest:hover {
+    transform: scale(1.3, 1.3); }
+  main .container {
+    display: block; }
+    main .container .qsomosn {
+      display: inline-block; }
+      main .container .qsomosn .img-fluid {
+        margin: 90px 90px 90px 230px;
+        justify-content: center; }
+  main .contentp {
+    margin-top: 0%;
+    margin-bottom: 30px; }
+    main .contentp .parrafo {
+      color: white;
+      font-family: sans-serif;
+      font-size: 20px;
+      margin-bottom: 60px; }
+  main .we {
+    color: yellow;
+    font-size: 40px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px; }
+  main .tituContacto {
+    margin-top: 20px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    color: yellow; }
+  main .formulary {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 90px; }
+    main .formulary .form-label {
+      color: yellow; }
+
+/*Extend agregado*/
+.new, .new1 {
+  width: 330px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: whitesmoke; }
+  .new :hover, .new1 :hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  .new img, .new1 img {
+    width: 330px;
+    height: 220px; }
+  .new h3, .new1 h3 {
+    font-weight: 600; }
+  .new p, .new1 p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300; }
+  .new a, .new1 a {
+    font-weight: 500;
+    text-decoration: none;
+    color: brown; }
+
+.newpadre {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: gray;
+  justify-content: space-evenly;
+  padding-bottom: 50px; }
